@@ -1,7 +1,10 @@
 kind: pipeline
+type: docker
 name: default
-
+   
 steps:
-- name: Run hello world
+- name: test
+  image: alpine
   commands:
-  - python hello.py
+  - echo hello
+  - echo world
